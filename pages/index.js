@@ -2,8 +2,30 @@ import Image from '../comps/image'
 
 export default () => {
   return (
-    <div>
-      <Image name='monarch'/>
+    <div className='show'>
+      <section>
+        <Image name='monarch'/>
+        <Image name='fish'/>
+      </section>
+      <style global jsx>{`
+        .show {
+          position: relative;
+          height:360px;
+          width:800px;
+        }
+        section {
+          position: relative;
+        }
+        section img {
+          position:absolute;
+        }
+        img {
+          transition: opacity 1s ease-in-out;
+        }
+        .fish:hover {
+          opacity: 0;
+        }
+      `}</style>
     </div>
   ) 
 }
