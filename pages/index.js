@@ -3,16 +3,12 @@ import Image from '../comps/image'
 export default () => {
   return (
     <div className='show'>
-      <section>
-        <Image name='monarch'/>
-        <Image name='fish'/>
-      </section>
-      <style global jsx>{`
+      <Image name='monarch'/>
+      <Image name='fish'/>
+      <style jsx global>{`
         .show {
           height:360px;
           width:800px;
-        }
-        section {
           position: relative;
         }
         img {
