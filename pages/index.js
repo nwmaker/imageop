@@ -9,17 +9,14 @@ export default () => {
       </section>
       <style global jsx>{`
         .show {
-          position: relative;
           height:360px;
           width:800px;
         }
         section {
           position: relative;
         }
-        section img {
-          position:absolute;
-        }
         img {
+          position: absolute;
           transition: opacity 1s ease-in-out;
         }
         .fish:hover {
