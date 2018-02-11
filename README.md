@@ -19,8 +19,9 @@ body {
 }
 ```
 
-Two images: monarch bottom, clown fish on top. On hover, one image to another.
-
+Two images: 
+monarch is bottom, clown fish on top. On hover, one image to another.
+fade has the similar effect but animated in opacity.
 
 
 
