@@ -28,6 +28,8 @@ All the images are put in the same spot. Then play with opacity (transparency) u
 So the opacity can be used to show or hide an image.
 Here is a [reference](http://css3.bradshawenterprises.com/cfimg/) to play with CSS, sometimes with jQuery. Ctrl-click to inpsect one particular element.
 
+This techniques can be used to create zoom-in-out or rotate.
+
 ## Reference
 * [CSS or CSS+jQuery](http://css3.bradshawenterprises.com/cfimg/)
 * [React-motion based, advanced TODO](https://github.com/souporserious/react-view-pager)
