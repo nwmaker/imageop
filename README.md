@@ -25,4 +25,6 @@ fade has the similar effect but animated in opacity.
 
 All the images are put in the same spot. Then play with opacity (transparency) using CSS for fade-in effect.
 
+So the opacity can be used to show or hide an image.
+Here is a [reference](http://css3.bradshawenterprises.com/cfimg/) to play with CSS, sometimes with jQuery. Ctrl-click to inpsect one particular element.
 
