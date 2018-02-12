@@ -23,5 +23,6 @@ Two images:
 monarch is bottom, clown fish on top. On hover, one image to another.
 fade has the similar effect but animated in opacity.
 
+All the images are put in the same spot. Then play with opacity (transparency) using CSS for fade-in effect.
 
 
