@@ -31,5 +31,7 @@ Here is a [reference](http://css3.bradshawenterprises.com/cfimg/) to play with C
 This techniques can be used to create zoom-in-out or rotate.
 
 ## Reference
+* [React Docs](https://reactjs.org/docs/animation.html)
+* [react-css-animation](https://wikiwi.github.io/react-css-transition/)
 * [CSS or CSS+jQuery](http://css3.bradshawenterprises.com/cfimg/)
 * [React-motion based, advanced TODO](https://github.com/souporserious/react-view-pager)
