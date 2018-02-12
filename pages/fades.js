@@ -17,7 +17,7 @@ const messages = [
 
 export default () => {
   let slides = images.map(
-    (image, index) => <ImageMsg name={image} message={messages[index]}/>
+    (image, index) => <ImageMsg key={index} name={image} message={messages[index]}/>
   )
   return (
     <div className='show'>
