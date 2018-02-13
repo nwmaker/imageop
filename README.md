@@ -7,7 +7,7 @@ Play with images based on next.js and react.js.
 npm i -S next@latest react@latest react-dom@latest
 ```
 
-## Show an image
+## Show/Hide an image
 
 Image comes in many formats. In the comps, the image component assumes png. 
 
@@ -29,6 +29,8 @@ So the opacity can be used to show or hide an image.
 Here is a [reference](http://css3.bradshawenterprises.com/cfimg/) to play with CSS, sometimes with jQuery. Ctrl-click to inpsect one particular element.
 
 This techniques can be used to create zoom-in-out or rotate.
+
+slide-css has the trick to play sliding with 5 slides where the first and the last one are the same. This approach put all the images one after another horizontally. Show one and hide the others.
 
 ## Reference
 | Ref | Notes |
