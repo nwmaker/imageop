@@ -32,6 +32,8 @@ This techniques can be used to create zoom-in-out or rotate.
 
 slide-css has the trick to play sliding with 5 slides where the first and the last one are the same. This approach put all the images one after another horizontally. Show one and hide the others.
 
+z-index, position, and opacity
+
 ## Reference
 | Ref | Notes |
 | --- |:----- |
