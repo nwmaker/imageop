@@ -46,7 +46,7 @@ export default () => {
           position: absolute;
           left: 0px;
           width: 3200px;
-          transition: all .3s linear;
+          transition: left .3s linear;
         }
         .show {
           height:360px;
