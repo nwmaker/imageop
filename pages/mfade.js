@@ -1,5 +1,6 @@
 import React from 'react'
-import Image from '../comps/image'
+//import Image from '../comps/image'
+import Image from '../comps/event-image'
 
 const images = [
   'monarch',
@@ -51,6 +52,13 @@ export default class extends React.Component {
 
   componentWillUnmount() {
     clearInterval(this.showTimer)
+  }
+
+  animationStart = ({animationName, elapsedTime}) => {
+    console.log(animationName: elapsedTime)
+  }
+  animationEnd = ({animationName, elapsedTime}) => {
+    console.log(animationName: elapsedTime)
   }
 
   render() {
