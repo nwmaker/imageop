@@ -22,17 +22,18 @@ export default class extends React.Component {
     
     this.state = {
       index: 0,
-      total: images.length
+      total: images.length,
+      isStart: false
     }
+    this.resetIndex = this.resetIndex.bind(this)
   }
 
   renderImages() {
     console.log('state:', this.state.index)
-    images.map((image, index) => {
-      console.log(index, image)
+    return images.map((image, index) => {
       let isActive = this.state.index === index
       return (
-        <Image key={index} name={image} isActive={isActive} />
+        <Image key={index} name={image} cb={this.animationIterationCall} />
       )
     })
   }
@@ -40,13 +41,13 @@ export default class extends React.Component {
   componentDidMount() {
     this.showTimer = setInterval(() => {
       let current = this.state.index
-      let next = current + 1
-      if (next >= this.state.total) {
-        next = 0
-      }
-      this.setState({
-        index: next
-      })
+        let next = current + 1
+        if (next >= this.state.total) {
+          next = 0
+        }
+        this.setState({
+          index: next
+        })
     }, 2000)
   }
 
@@ -54,21 +55,24 @@ export default class extends React.Component {
     clearInterval(this.showTimer)
   }
 
-  animationStart = ({animationName, elapsedTime}) => {
-    console.log(animationName: elapsedTime)
+  handleAnimationIteration(e) {
+    e.stopPropagation()
+    console.log('Iteration')
   }
-  animationEnd = ({animationName, elapsedTime}) => {
-    console.log(animationName: elapsedTime)
+
+  animationIterationCall(elapsedTime) {
+    console.log('mfade', elapsedTime)
+  }
+
+  resetIndex() {
+    this.setState({index: 0})
   }
 
   render() {
   let slides = this.renderImages()
   return (
-    <div className='show'>
-      <Image name='monarch' />
-      <Image name='mountain' />
-      <Image name='fish' />
-      <Image name='rocks' />
+    <div className='show' onAnimationIteration={this.handleAnimationIteration}>
+      { slides }
       <div className='msg'>{messages[this.state.index]}</div>
       <style jsx global>{`
         .show {
