@@ -1,4 +1,4 @@
-import FadeCarousel from './fadeCarousel.js'
+import FadeCarousel from './fade-carousel.js'
 
 const images = [
   'monarch',

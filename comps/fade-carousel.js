@@ -1,6 +1,6 @@
 import React from 'react'
-import Slide from './fadeSlide'
-import Indicator from './fadeIndicator'
+import Slide from './fade-slide'
+import Indicator from './fade-indicator'
 
 /*
  * this assumes that all the images are PNG in the static folder
