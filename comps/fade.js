@@ -70,6 +70,7 @@ class Fade extends React.Component {
 
     return (
       <div className='fade-show'>
+        {slide}
         {dots}
       </div>
     )
